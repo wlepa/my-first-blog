@@ -25,7 +25,7 @@ SECRET_KEY = 'mg@-ua7=38p+=1s(d=0a*es6i^duzotjd0gn2usesz$tb1lpn2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wlepa.pythonanywhere.com']
 
 
 # Application definition
