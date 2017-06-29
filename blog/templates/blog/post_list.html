@@ -9,20 +9,14 @@
                 <br />
             </div>
 
-            <div>
-                <em>published: 28.06.2017, 16:22</em>
-                <h2><a href="">Мысль первая</a></h2>
-                <p>Вместо высказывания своих замыслов и откровений.</p>
-                <p>Просто хочу сказать, что люблю свою жену!</p>
-                <p><b>Дорогая, чмок, чмок!!!</b></p>
-                <br />
-                <br />
-            </div>
-
-            <div>
-                <em>published: 28.06.2017, 16:31</em>
-                <h2><a href="">Мысль вторая</a></h2>
-                <p>Поехал я домой. Возможно, пока буду ехать что-нибудь придет в голову.</p>
-            </div>
+            
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+          
         </body>
     </html>
